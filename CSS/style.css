@@ -1,0 +1,64 @@
+/* Default Light Mode */
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* Default Light Mode Navbar */
+#navbar {
+  background-color: #f8f9fa;
+  transition: background-color 0.5s, color 0.5s;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  -moz-transition: background-color 0.5s, color 0.5s;
+  -ms-transition: background-color 0.5s, color 0.5s;
+  -o-transition: background-color 0.5s, color 0.5s;
+}
+#navbar .nav-link {
+  color: black;
+}
+
+/* Dark Mode Navbar */
+body.dark-mode #navbar {
+  background-color: #343a40; /* Dark Bootstrap default */
+}
+body.dark-mode #navbar .nav-link {
+  color: white;
+}
+
+#article{
+  background-color: #cc0000;
+  transition: background-color 0.5s;
+}
+
+#gallery{
+  background-color: white;
+  transition: background-color 0.5s;
+}
+
+#hero{
+  background-color: white;
+  transition: background-color 0.5s;
+}
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode #gallery{
+  background-color: #343a40;
+}
+
+body.dark-mode #hero{
+  background-color: #343a40;
+}
+
+body.dark-mode #article{
+  background-color: #121212;
+}
+h1{
+  color: white;
+}

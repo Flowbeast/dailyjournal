@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <style>
+        /* Styling for the About Me section */
+        body {
+            background-color: #f8d7da;
+        }
+        .profile-container {
+            padding: 50px;
+        }
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .profile-pic:hover {
+            transform: scale(1.05);
+        }
+        .profile-info {
+            display: none; /* Hidden initially */
+        }
+        .social-icons {
+            margin-top: 30px;
+        }
+        .social-icons a {
+            color: #333;
+            font-size: 20px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        @media (min-width: 768px) {
+            .profile-layout {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: left;
+            }
+            .profile-details {
+                margin-left: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- About Me Section -->
+<div class="container profile-container">
+    <div class="profile-layout">
+        <!-- Profile Image -->
+        <img src="https://salvemusic.com.ua/wp-content/uploads/2020/09/playboi-carti1-1024x579.jpg" 
+             alt="Profile Picture" 
+             class="profile-pic" 
+             id="profile-pic">
+        
+        <!-- Profile Information -->
+        <div class="profile-info profile-details" id="profile-info">
+            <p>A11.2023.12345</p>
+            <h2>Aprilyani Nur Safitri</h2>
+            <p>Program Studi S1 Teknik Informatika</p>
+            <p><a href="https://www.udinus.ac.id" target="_blank">Universitas Dian Nuswantoro</a></p>
+        </div>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons text-center">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+    </div>
+
+    <!-- Footer Text -->
+    <div class="footer text-center">
+        Aprilyani Nur Safitri © 2023
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+    document.getElementById("profile-pic").addEventListener("click", function () {
+        const profileInfo = document.getElementById("profile-info");
+        profileInfo.style.display = profileInfo.style.display === "none" ? "block" : "none";
+    });
+</script>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
